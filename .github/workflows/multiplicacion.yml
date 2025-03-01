@@ -1,0 +1,17 @@
+name: Test Multiplicación
+
+on: [push, pull_request]
+
+jobs:
+  test-multiplicacion:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar entorno
+        run: echo "Configurando entorno para pruebas de MULTIPLICACIÓN"
+
+      - name: Ejecutar pruebas de MULTIPLICACIÓN
+        run: echo "Ejecutando pruebas de multiplicación..."  # Aquí se ejecutaría el test real

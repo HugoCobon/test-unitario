@@ -1,0 +1,17 @@
+name: Test División
+
+on: [push, pull_request]
+
+jobs:
+  test-division:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar entorno
+        run: echo "Configurando entorno para pruebas de DIVISIÓN"
+
+      - name: Ejecutar pruebas de DIVISIÓN
+        run: echo "Ejecutando pruebas de división..."  # Aquí se ejecutaría el test real

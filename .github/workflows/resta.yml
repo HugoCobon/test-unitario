@@ -1,0 +1,17 @@
+name: Test Resta
+
+on: [push, pull_request]
+
+jobs:
+  test-resta:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar entorno
+        run: echo "Configurando entorno para pruebas de RESTA"
+
+      - name: Ejecutar pruebas de RESTA
+        run: echo "Ejecutando pruebas de resta..."  # Aquí se ejecutaría el test real
